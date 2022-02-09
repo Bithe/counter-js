@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+
+    <h1 onclick="console.log('H1 tag')">Event niye Click</h1>
+
+    <button onclick="alert('This is me')" ;>Click Me</button>
+
+    <button onclick="document.body.style.backgroundColor='blue'">Background Color</button>
+
+    <button onclick="makeRed()">Click Me: Red</button>
+
+    <button id="make-yellow-button">Function Click Yellow</button>
+
+    <button id="make-green-button">Anonymous function green</button>
+<button id="make-golden">Click me:golden</button>
+ 
+<button id="make-pink-button">Click-pink</button>
+
+<button id="make-white">Click-white</button>
+
+<p id="clicking-method"></p>
+
+<input type="text" name="" id="name">
+<button id="update-name">Update</button>
+
+<button onclick="handleJustFunction()">Just function</button>
+
+<button id="handle-event">Direct add listener</button>
+
+<script src="event.js"></script>
+
+    <script>
+document.getElementById('update-name').addEventListener('click',function(){
+    const name = document.getElementById('name');
+    const p = document.getElementById('clicking-method');
+    p.innerText = name.value;
+    name.value ="";
+})
+    </script>
+</body>
+
+</html>
