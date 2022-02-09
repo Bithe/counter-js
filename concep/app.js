@@ -27,13 +27,13 @@ function add(e){
 }
 
 function minus(e){
-  
     if(count > 0){
         count--;
-    }
-    
+    }  
     control("count");
 }
+
+// 
 function control(id){
     document.getElementById(id).innerText = count;
 }
